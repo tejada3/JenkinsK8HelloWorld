@@ -1,6 +1,6 @@
 # VPC Module
 module "vpc" {
-  source  = ".terraform/modules"
+  source  = "eks-flask-terraform/.terraform/modules"
   version = "5.0"
 
   name                 = "eks-vpc"
@@ -16,7 +16,7 @@ module "vpc" {
 
 # EKS Cluster
 module "eks" {
-  source          = ".terraform/modules"
+  source          = "eks-flask-terraform/.terraform/modules"
   version         = "19.0"
 
   cluster_name    = var.cluster_name
