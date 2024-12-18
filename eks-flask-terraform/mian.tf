@@ -16,7 +16,7 @@ module "vpc" {
 
 # EKS Cluster
 module "eks" {
-  source          = ".terraform/modules/eks"
+  source          = "/modules/eks"
   version         = "19.0"
 
   cluster_name    = var.cluster_name
